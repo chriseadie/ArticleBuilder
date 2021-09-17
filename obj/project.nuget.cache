@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rLSAa3VYUA2CiZs3EHJRF37OYzBAqmUD+RG9d+UnxKt4URrGCjf1m168LOEPrzMyA3e+ewWv6i9Dv3cT40y2KA==",
+  "success": true,
+  "projectFilePath": "D:\\Desktop\\ArticleBuilder\\ArticleBuilder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\caead\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512"
+  ],
+  "logs": []
+}
