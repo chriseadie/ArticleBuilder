@@ -5,7 +5,7 @@ import { IState } from './types';
 
 export const StateContext = createContext<[IState,React.Dispatch<any>]>([StateReducer.initialState,() => null]);
 
-export const StateProvider = ({ children }) => {
+export const StateProvider = ({ children }:{children:any}) => {
 
     let [state, dispatch] = useReducer(
         StateReducer.AppStateReducer,

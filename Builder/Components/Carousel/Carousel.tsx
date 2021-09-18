@@ -1,16 +1,26 @@
 import React from 'react';
 import { Carousel } from '../../Parts/Carousel/Carousel';
+import { IPart } from '../../Parts/IParts';
 
 
-export default function CarouselPart(part:Carousel){
+export default function CarouselPart({part}:{part:IPart}){
+    const component = part as Carousel;
     return (
         <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
-                {part.images.map(image => (
-                    <div className="carousel-item">
+                {component.images.map((image,index) => {
+                    if(index === 0){
+                        return (
+                            <div key={index} className="carousel-item active">
+                                <img src={image.src} className={`d-block w-100 ${image.class}`} alt={image.alt}/>
+                            </div>
+                        )
+                    }
+                    return (<div key={index} className="carousel-item">
                         <img src={image.src} className={`d-block w-100 ${image.class}`} alt={image.alt}/>
                     </div>
-                ))}
+                    )
+                })}
             </div>
         </div>
     )

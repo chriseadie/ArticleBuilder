@@ -1,4 +1,5 @@
 ﻿import React from 'react'
 import ReactDOM from 'react-dom';
+import Application from './app';
 
-ReactDOM.render(<div>Super Cool React App</div>, document.querySelector("#root"));
+ReactDOM.render(<Application/>, document.querySelector("#root"));

@@ -7,5 +7,6 @@ export interface IPart {
 export enum PartType {
     Carousel = "Carousel",
     CarouselWithControls = "CarouselWithControls",
-    CarouselWithIndicator = "CarouselWithIndicator"
+    CarouselWithIndicator = "CarouselWithIndicator",
+    CarouselWithCaptions = "CarouselWithCaptions"
 }
