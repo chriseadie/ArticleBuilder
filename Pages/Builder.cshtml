@@ -5,3 +5,11 @@
 <div>
    <p>This is the builder page</p>
 </div>
+<div id="root"></div>
+
+<environment include="Development">
+    <script src="http://localhost:9000/static/Builder.bundle.js"></script>
+</environment>
+<environment exclude="Developement">
+    <script src="~/js/Builder.bundle.js"></script>
+</environment>
