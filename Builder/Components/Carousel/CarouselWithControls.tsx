@@ -1,9 +1,10 @@
 import React from 'react';
 import { CarouselWithControls } from '../../Parts/Carousel/CarouselWithControls';
 import { IPart } from '../../Parts/IParts';
+import { IRenderComponent } from '../IRenderComponents';
 
 
-export default function CarouselWithControlsPart({part}:{part:IPart}){
+export default function CarouselWithControlsPart({part}:IRenderComponent){
     const component = part as CarouselWithControls;
     return (
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">

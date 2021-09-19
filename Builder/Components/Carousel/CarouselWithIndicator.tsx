@@ -1,9 +1,9 @@
 import React from 'react';
 import { CarouselWithIndicator } from '../../Parts/Carousel/CarouselWithIndicator';
-import { IPart } from '../../Parts/IParts';
+import { IRenderComponent } from '../IRenderComponents';
 
 
-export default function CarouselWithIndicatorPart({part}:{part:IPart}){
+export default function CarouselWithIndicatorPart({part}:IRenderComponent){
     const component = part as CarouselWithIndicator;
     return (
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
