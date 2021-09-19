@@ -11,7 +11,7 @@ export class Accordion implements IPart {
 
     constructor(){
         this.partType = PartType.Accordion;
-        this.content = new Array<IAccordionContent>();
+        this.content = [{title:"Demo Conent",description:"Demo Description"}]
         this.id = CreateGuid();
     }
 
